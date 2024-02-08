@@ -30,7 +30,7 @@ export class AddblogService {
     console.log(this.token)
     return headers;
   }
-  baseUrl = "http://dashboard-harshit.itcblogs.xyz:8085/dashboard/addBlogs";
+  baseUrl = "http://dashboardharshit.itcblogs.xyz:8085/dashboard/addBlogs";
 
   public addPosts(postData: any): Observable<Object> { 
     console.log(postData); 
@@ -38,7 +38,7 @@ export class AddblogService {
     return this.httpcl.post(this.baseUrl, postData);
   }
 
-  baseUrl1 = "http://dashboard-harshit.itcblogs.xyz:8085/dashboard/showBlogs";
+  baseUrl1 = "http://dashboardharshit.itcblogs.xyz:8085/dashboard/showBlogs";
 
   public getPosts() {
     const headers=new HttpHeaders({
