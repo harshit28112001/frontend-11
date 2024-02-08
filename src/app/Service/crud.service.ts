@@ -7,7 +7,7 @@ import { register } from '../model/register';
   providedIn: 'root'
 })
 export class CrudService {
-  baseUrl="http://login-harshit.itcblogs.xyz:8083/auth/register"
+  baseUrl="http://loginharshit.itcblogs.xyz:8083/auth/register"
   constructor(private httpcl:HttpClient)  { }
   registerUser(reg:register):Observable<Object>{
     console.log(reg)
