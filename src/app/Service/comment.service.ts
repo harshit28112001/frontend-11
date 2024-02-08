@@ -10,10 +10,10 @@ export class CommentService {
   constructor(private blgs:AddblogService,private http:HttpClient) { }
   addComments(info:comment)
   {
-    return this.http.post(`http://dashboard-harshit.itcblogs.xyz:8085/dashboard/addComment`,info)
+    return this.http.post(`http://dashboardharshit.itcblogs.xyz:8085/dashboard/addComment`,info)
   }
   showComments(id:string)
   {
-    return this.http.get(`http://dashboard-harshit.itcblogs.xyz:8085/dashboard/getComments/${id}`)
+    return this.http.get(`http://dashboardharshit.itcblogs.xyz:8085/dashboard/getComments/${id}`)
   }
 }
